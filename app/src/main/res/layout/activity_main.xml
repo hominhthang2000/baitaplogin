@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#265F7E">
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/profile" />
+    <TextView
+        android:id="@+id/minhthang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hồ Minh Thắng"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff"
+        android:textSize="16dp"
+        android:layout_below="@id/profile">
+    </TextView>
+    <TextView
+        android:id="@+id/msv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18115053010239"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F6F6F6"
+        android:textSize="16dp"
+        android:layout_below="@id/minhthang">
+    </TextView>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minhthang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_action_user1"
+        android:ems="10"
+        android:hint="Đăng nhập"
+        android:inputType="textPersonName"
+        android:textColorHint="#E2181919"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="13dp"
+
+       android:drawableLeft="@drawable/ic_action_look"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textSize="25sp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/cardview"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#E8C774"
+        android:layout_below="@+id/pass"
+        app:cardCornerRadius="25sp"
+        app:cardElevation="10dp"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/dangnhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập"
+               android:layout_centerInParent="true"
+                android:textSize="23sp"
+                android:textColor="#F57C00">
+            </TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/quenpass"
+    android:layout_below="@+id/cardview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Quên mật khẩu?"
+    android:textColor="#F8F3F3"
+    android:textSize="22sp"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_below="@+id/quenpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạo tài khoản"
+        android:textColor="#FADF9C"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
